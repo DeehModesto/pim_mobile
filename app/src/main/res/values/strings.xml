@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProjetoFirebase</string>
+    <string name="entrar">entrar</string>
+    <string name="txt_btn_esqueceu_a_senha">esqueceu a senha</string>
+    <string name="text_cadastro">Seja Bem-Vindo!</string>
+    <string name="voltar">voltar</string>
+    <string name="dados_pessoais">dados pessoais</string>
+    <string name="apolice">apólice</string>
+    <string name="txt_btn_privacidade">privacidade</string>
+    <string name="suporte">suporte</string>
+    <string name="menudados">Como podemos ajudar?</string>
+    <string name="telaredefinir">Redefinir senha</string>
+    <string name="botaoredefinir">Redefinir</string>
+
+</resources>

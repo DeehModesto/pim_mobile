@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".FormRedefinir">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="101dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="39dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/redefinir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        android:layout_width="355dp"
+        android:layout_height="324dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_redefinir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redefinir" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_email"
+        android:hint="Digite seu e-mail:"
+        android:inputType="textEmailAddress"
+        android:textColor="#171616"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editsenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editsenha"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_senha"
+        android:hint="Digite uma senha:"
+        android:inputType="numberPassword"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTrocasenha"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_senha"
+        android:hint=" Confirme a senha:"
+        android:inputType="numberPassword"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/bt_redefinir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editsenha"
+        app:layout_constraintVertical_bias="0.132"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_redefinir"
+        style="@style/Button"
+        android:layout_width="325dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/botaoredefinir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents" />
+
+    <TextView
+        android:id="@+id/redefinir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:text="@string/telaredefinir"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
